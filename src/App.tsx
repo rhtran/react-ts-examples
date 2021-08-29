@@ -5,7 +5,7 @@ const App: React.FC = () => {
 
   interface UserInt {
     name: string;
-    age: string;
+    age: number;
     job: string;
   }
 
@@ -17,7 +17,7 @@ const App: React.FC = () => {
   const [usersState, setUsersState] = useState<AllUserInt>({
     currentUser: {
       name: "",
-      age: "",
+      age: 0,
       job: ""
     },
     allUsers: []
@@ -61,7 +61,7 @@ const App: React.FC = () => {
     setUsersState({
       currentUser: {
         name: "",
-        age: "",
+        age: 0,
         job: ""
       },
       allUsers: [
