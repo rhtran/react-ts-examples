@@ -11,7 +11,7 @@ function App() {
         <input id="username" type="text" name="name" value=""/>
 
         <label htmlFor="userAge">Age:</label>
-        <input id="userAge" type="number" name="age" value=""/>
+        <input id="userAge" type="number" name="age" value="0"/>
 
         <label htmlFor="userJob">Job:</label>
         <input id="userJob" type="text" name="job" value=""/>
