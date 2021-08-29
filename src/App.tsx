@@ -66,7 +66,7 @@ const App: React.FC = () => {
   return (
     <div className="container">
       <h1>React with Typescript</h1>
-      <form onSubmit={submitForm}>
+      <form onSubmit={submitForm} className={"card"}>
         <label htmlFor="username">Name:</label>
         <input required
                id="username" type="text" name="name"
