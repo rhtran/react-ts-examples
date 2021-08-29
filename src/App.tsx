@@ -12,7 +12,7 @@ const App: React.FC = () => {
   const [usersState, setUsersState] = useState<IAllUser>({
     currentUser: {
       name: "",
-      age: "",
+      age: 0,
       job: "",
       deleteUser: () => {}
     },
@@ -41,7 +41,7 @@ const App: React.FC = () => {
   }
 
   const allUsers = usersState.allUsers.map((user, i) => (
-    <User name={user.name} age={user.age} job={user.job} deleteUser={() => deleteHandler(i)}/>
+    <User key={i} name={user.name} age={user.age} job={user.job} deleteUser={() => deleteHandler(i)}/>
   ))
 
   console.log(usersState);
@@ -52,7 +52,7 @@ const App: React.FC = () => {
     setUsersState({
       currentUser: {
         name: "",
-        age: "",
+        age: 0,
         job: "",
         deleteUser: () => {}
       },
@@ -91,7 +91,6 @@ const App: React.FC = () => {
       {allUsers}
     </div>
   )
-
 }
 
 export default App;
