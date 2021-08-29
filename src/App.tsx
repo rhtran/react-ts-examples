@@ -68,17 +68,20 @@ const App: React.FC = () => {
       <h1>React with Typescript</h1>
       <form onSubmit={submitForm}>
         <label htmlFor="username">Name:</label>
-        <input id="username" type="text" name="name"
+        <input required
+               id="username" type="text" name="name"
                value={usersState.currentUser.name}
                onChange={onChangeHandler}/>
 
         <label htmlFor="userAge">Age:</label>
-        <input id="userAge" type="string" name="age"
+        <input required
+               id="userAge" type="string" name="age"
                value={usersState.currentUser.age}
                  onChange={onChangeHandler}/>
 
         <label htmlFor="userJob">Job:</label>
-        <input id="userJob" type="text" name="job"
+        <input required
+               id="userJob" type="text" name="job"
                value={usersState.currentUser.job}
                onChange={onChangeHandler}/>
 
