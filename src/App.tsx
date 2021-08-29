@@ -1,24 +1,20 @@
 import React, {useState} from 'react';
 import './App.css';
+import User, {IUser} from "./components/user/User";
 
 const App: React.FC = () => {
 
-  interface UserInt {
-    name: string;
-    age: string;
-    job: string;
+  interface IAllUser {
+    currentUser: IUser;
+    allUsers: Array<IUser>;
   }
 
-  interface AllUserInt {
-    currentUser: UserInt;
-    allUsers: Array<UserInt>;
-  }
-
-  const [usersState, setUsersState] = useState<AllUserInt>({
+  const [usersState, setUsersState] = useState<IAllUser>({
     currentUser: {
       name: "",
       age: "",
-      job: ""
+      job: "",
+      deleteUser: () => {}
     },
     allUsers: []
   })
@@ -45,12 +41,7 @@ const App: React.FC = () => {
   }
 
   const allUsers = usersState.allUsers.map((user, i) => (
-    <div key={i}>
-      <h2>{user.name}</h2>
-      <h2>{user.age}</h2>
-      <h2>{user.job}</h2>
-      <button onClick={() => deleteHandler(i)}>Delete User</button>
-    </div>
+    <User name={user.name} age={user.age} job={user.job} deleteUser={() => deleteHandler(i)}/>
   ))
 
   console.log(usersState);
@@ -62,7 +53,8 @@ const App: React.FC = () => {
       currentUser: {
         name: "",
         age: "",
-        job: ""
+        job: "",
+        deleteUser: () => {}
       },
       allUsers: [
         ...usersState.allUsers,
