@@ -16,7 +16,7 @@ There are 6 tutorial videos:
 |-------|----------------------------------------------------------|--------|
 |  1    | initialize the project and implement add user submit form| part-1 |
 |  2    | implement usersState onChange                            | part-2 |
-|  3    |                                                       | part-3 |
+|  3    | complete add user functionality                          | part-3 |
 |  4    |                                                       | part-4 |
 |  5    |                                                       | part-5 |
 |  6    |                                                       | part-6 |

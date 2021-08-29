@@ -3,7 +3,7 @@ import "./User.css";
 
 export interface IUser {
   name: string;
-  age: string;
+  age: number;
   job: string;
   deleteUser: () => void;
 }
