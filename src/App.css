@@ -17,8 +17,7 @@ body {
   padding: 20px 30px;
   border-radius: 5px;
   width: 500px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 
 .card label {
@@ -37,3 +36,13 @@ body {
   font-size: 24px;
 }
 
+.submitBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

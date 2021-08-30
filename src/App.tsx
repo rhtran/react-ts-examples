@@ -85,7 +85,7 @@ const App: React.FC = () => {
                value={usersState.currentUser.job}
                onChange={onChangeHandler}/>
 
-        <button type="submit">Add User</button>
+        <button type="submit" className="submitBtn">Add User</button>
       </form>
 
       {allUsers}
