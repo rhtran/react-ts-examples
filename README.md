@@ -3,7 +3,7 @@ In this tutorial, we are building the user list.  Simply, add a new user to the 
 
 
 ## Project Setup
-npm install create-react-app
+npm install create-react-app<br/>
 npx create-react-app user-list --template typescript
 
 ## Video Tutorials
@@ -19,8 +19,8 @@ There are 6 tutorial videos:
 |  6    | apply App.css                                            | part-6 |
 
 ## Include Storybook 
-npx -p @storybook/cli sb init
-rm -rf /src/stories
-npm run storybook
+npx -p @storybook/cli sb init<br/>
+rm -rf /src/stories<br/>
+npm run storybook<br/>
 
 
