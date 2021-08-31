@@ -19,8 +19,8 @@ There are 6 tutorial videos:
 |  6    | apply App.css                                            | part-6 |
 
 ## Include Storybook 
-npm i @storybook/cli <br/>
-npx sb init
-
+npx -p @storybook/cli sb init
+rm -rf /src/stories
+npm run storybook
 
 
