@@ -1,14 +1,14 @@
 import React from "react";
 import "./User.css";
 
-export interface IUser {
+export interface UserProps {
   name: string;
   age: number;
   job: string;
   deleteUser: () => void;
 }
 
-const User: React.FC<IUser> = ({name, age, job, deleteUser}) => {
+const User: React.FC<UserProps> = ({name, age, job, deleteUser}) => {
   return (
     <div className={"card"}>
       <div className={"row"}>
