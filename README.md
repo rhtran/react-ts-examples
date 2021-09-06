@@ -4,7 +4,10 @@ In this tutorial, we are building the user list.  Simply, add a new user to the 
 
 ## Project Setup
 npm install create-react-app<br/>
-npx create-react-app user-list --template typescript
+npx create-react-app user-list --template typescript<br/>
+npm install react-router-dom @types/react-router-dom<br/>
+npm install react-router @types/react-router
+
 
 ## Video Tutorials
 There are 6 tutorial videos:
