@@ -4,10 +4,12 @@ import { BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import Topbar from "./components/topbar/Topbar";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      {/*<Topbar />*/}
       <App />
     </BrowserRouter>
   </React.StrictMode>,

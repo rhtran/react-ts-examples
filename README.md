@@ -6,7 +6,15 @@ In this tutorial, we are building the user list.  Simply, add a new user to the 
 npm install create-react-app<br/>
 npx create-react-app user-list --template typescript<br/>
 npm install react-router-dom @types/react-router-dom<br/>
-npm install react-router @types/react-router
+npm install react-router @types/react-router<br/>
+
+---
+Admin Panel<br/>
+npm install @material-ui/icons<br/>
+npm install @material-ui/core<br/>
+npm install @material-ui/data-grid<br/>
+npm install recharts<br/?
+
 
 
 ## Video Tutorials

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './UserList.css';
-import User from "../components/user/User";
-import AllUser from "../models/AllUser.domain";
+import User from "../../components/user/User";
+import AllUser from "../../models/AllUser.domain";
 
 const UserList: React.FC = () => {
 

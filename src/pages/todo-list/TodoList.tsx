@@ -1,7 +1,7 @@
 import React, {ChangeEvent, FC, useState} from 'react';
-import Task from "../models/Task.domain";
+import Task from "../../models/Task.domain";
 import './TodoList.css';
-import TodoTask from "../components/todo/TodoTask";
+import TodoTask from "../../components/todo/TodoTask";
 
 const TodoList: FC = () => {
 
@@ -27,7 +27,7 @@ const TodoList: FC = () => {
   const completeTask = (taskNameToDelete: string): void => {
     setTodoList(
       todoList.filter((task) => {
-        return task.taskName != taskNameToDelete;
+        return task.taskName !== taskNameToDelete;
       })
     );
   };
